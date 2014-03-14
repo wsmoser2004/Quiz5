@@ -1,5 +1,5 @@
 //
-//  Quiz5ViewController.h
+//  DetailViewController.h
 //  Quiz5
 //
 //  Created by Moser, Wesley on 3/14/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Quiz5ViewController : UITableViewController
+@interface DetailViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UISlider *urgencySlider;
 
 @end

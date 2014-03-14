@@ -22,6 +22,8 @@
 		EFC956B618D383D500302A1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFC956B418D383D500302A1F /* InfoPlist.strings */; };
 		EFC956B818D383D500302A1F /* Quiz5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC956B718D383D500302A1F /* Quiz5Tests.m */; };
 		EFC956C318D384C600302A1F /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC956C218D384C600302A1F /* Task.m */; };
+		EFC956C718D3882200302A1F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC956C518D3882200302A1F /* DetailViewController.m */; };
+		EFC956C818D3882200302A1F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC956C618D3882200302A1F /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		EFC956B718D383D500302A1F /* Quiz5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz5Tests.m; sourceTree = "<group>"; };
 		EFC956C118D384C600302A1F /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		EFC956C218D384C600302A1F /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		EFC956C418D3882200302A1F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		EFC956C518D3882200302A1F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		EFC956C618D3882200302A1F /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,9 @@
 				EFC9569B18D383D500302A1F /* Quiz5AppDelegate.h */,
 				EFC9569C18D383D500302A1F /* Quiz5AppDelegate.m */,
 				EFC9569E18D383D500302A1F /* Main.storyboard */,
+				EFC956C418D3882200302A1F /* DetailViewController.h */,
+				EFC956C518D3882200302A1F /* DetailViewController.m */,
+				EFC956C618D3882200302A1F /* DetailViewController.xib */,
 				EFC956C118D384C600302A1F /* Task.h */,
 				EFC956C218D384C600302A1F /* Task.m */,
 				EFC956A118D383D500302A1F /* Quiz5ViewController.h */,
@@ -237,6 +245,7 @@
 				EFC956A518D383D500302A1F /* Images.xcassets in Resources */,
 				EFC9569718D383D500302A1F /* InfoPlist.strings in Resources */,
 				EFC956A018D383D500302A1F /* Main.storyboard in Resources */,
+				EFC956C818D3882200302A1F /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC956C718D3882200302A1F /* DetailViewController.m in Sources */,
 				EFC956C318D384C600302A1F /* Task.m in Sources */,
 				EFC9569918D383D500302A1F /* main.m in Sources */,
 				EFC956A318D383D500302A1F /* Quiz5ViewController.m in Sources */,

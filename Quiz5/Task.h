@@ -10,4 +10,8 @@
 
 @interface Task : NSObject
 
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSDate *dueDate;
+@property (nonatomic) float urgency;
+
 @end
