@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Moser, Wesley. All rights reserved.
 //
 
+#import "DetailViewController.h"
 #import "Task.h"
 #import "Quiz5ViewController.h"
 
@@ -43,6 +44,7 @@
         
         [self.tasks addObject:newTask];
     }
+    self.title = @"My Tasks";
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,7 +55,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//    return [self.tasks count];
     return 10;
 }
 
@@ -72,7 +73,31 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateStyle:NSDateFormatterFullStyle];
     cell.detailTextLabel.text = [formatter stringFromDate:currTask.dueDate];
+    cell.backgroundColor = [UIColor colorWithRed:(currTask.urgency * .11) green:((9 - currTask.urgency) * .11) blue:0 alpha:1];
+    if (currTask.urgency > 6)
+    {
+        [cell.imageView setImage:[UIImage imageNamed:@"urgent.jpg"]];
+    }
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    UITableViewCell *cell = (UITableViewCell *)sender;
+    NSIndexPath *path = [self.tableView indexPathForCell:cell];
+
+    DetailViewController *detailView = ((DetailViewController *)[segue destinationViewController]);
+    
+    detailView.task = self.tasks[[path row]];
+    detailView.dismissBlock = ^{
+        [self.tasks sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+            Task *t1 = (Task *)obj1;
+            Task *t2 = (Task *)obj2;
+            return [t1.dueDate compare:t2.dueDate];
+        }];
+        [[self tableView] reloadData];
+    };
+    detailView.title = ((Task *)self.tasks[[path row]]).name;
 }
 
 @end

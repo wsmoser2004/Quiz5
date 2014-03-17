@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF076AE218D69FFC0081F3AD /* urgent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF076AE118D69FFC0081F3AD /* urgent.jpg */; };
 		EFC9568D18D383D500302A1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC9568C18D383D500302A1F /* Foundation.framework */; };
 		EFC9568F18D383D500302A1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC9568E18D383D500302A1F /* CoreGraphics.framework */; };
 		EFC9569118D383D500302A1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC9569018D383D500302A1F /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF076AE118D69FFC0081F3AD /* urgent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = urgent.jpg; sourceTree = "<group>"; };
 		EFC9568918D383D500302A1F /* Quiz5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC9568C18D383D500302A1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EFC9568E18D383D500302A1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +132,7 @@
 				EFC956C218D384C600302A1F /* Task.m */,
 				EFC956A118D383D500302A1F /* Quiz5ViewController.h */,
 				EFC956A218D383D500302A1F /* Quiz5ViewController.m */,
+				EF076AE118D69FFC0081F3AD /* urgent.jpg */,
 				EFC956A418D383D500302A1F /* Images.xcassets */,
 				EFC9569318D383D500302A1F /* Supporting Files */,
 			);
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC956A518D383D500302A1F /* Images.xcassets in Resources */,
+				EF076AE218D69FFC0081F3AD /* urgent.jpg in Resources */,
 				EFC9569718D383D500302A1F /* InfoPlist.strings in Resources */,
 				EFC956A018D383D500302A1F /* Main.storyboard in Resources */,
 				EFC956C818D3882200302A1F /* DetailViewController.xib in Resources */,
@@ -477,6 +481,7 @@
 				EFC956BD18D383D500302A1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFC956BE18D383D500302A1F /* Build configuration list for PBXNativeTarget "Quiz5Tests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +490,7 @@
 				EFC956C018D383D500302A1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
